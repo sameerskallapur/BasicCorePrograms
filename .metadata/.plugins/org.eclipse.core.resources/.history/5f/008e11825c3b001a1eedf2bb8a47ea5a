@@ -1,0 +1,22 @@
+import java.util.*;
+public class PowerOf2 {
+
+	public boolean PowerValueCheck()throws ArithmeticException {
+		
+		if (power>=31) {
+			throw new ArithmeticException();
+		}
+		return 
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the value of power");
+		int power = sc.nextInt();
+		PowerOf2 p2 = new PowerOf2();
+		Boolean bool = false;
+//		int finalValue = (int) Math.pow(2, power);
+		bool = PowerValueCheck()
+	}
+
+}

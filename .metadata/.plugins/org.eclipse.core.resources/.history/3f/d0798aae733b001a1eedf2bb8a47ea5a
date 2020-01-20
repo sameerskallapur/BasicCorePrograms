@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class EuclideanDist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Give the value of x");
+		int x = sc.nextInt();
+		System.out.println("Give the value of y");
+		int y = sc.nextInt();
+		EulideanDistance(x,y);
+		
+
+//		float h= (float) Math.sqrt(-2);
+//		System.out.println(h);
+	}
+	public static void EulideanDistance() {
+		if (x>=0 & y>=0) {
+		
+		
+	}
+	}
+
+
+}

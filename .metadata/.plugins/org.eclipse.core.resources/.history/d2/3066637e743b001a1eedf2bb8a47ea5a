@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class EuclideanDist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Give the value of x");
+		int x = sc.nextInt();
+		System.out.println("Give the value of y");
+		int y = sc.nextInt();
+		EulideanDistance(x,y);
+			
+	}
+	
+	public static void EulideanDistance(int x , int y) throws ArithmeticException {
+		if (x<0 & y<0) {
+		throw new ArithmeticException("the distance value can not be negative");
+		}
+		else {
+			float EuclDist = (float) Math.sqrt(x*x + y*y);
+		System.out.println("The Eulidean Distance of the given 2 points is "+EuclDist);
+		}
+		
+	}
+
+
+}

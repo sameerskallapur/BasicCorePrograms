@@ -1,0 +1,46 @@
+import java.util.*;
+
+import jdk.jfr.Percentage;
+public class FlipCoin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int Heads = 0;
+		int Tails = 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of times the coin is flipped");
+		int Occurences = sc.nextInt();
+		if (Occurences < 0) {
+			System.out.println("Invalid input!");
+		}
+		else {
+			for (int i = 0; i <= Occurences; i++) {
+				double RandomNumber = getRandomNumberInRange(0, 1);
+				if (RandomNumber>0.5) {
+					Heads++;
+					}
+				else {
+					Tails++;
+				}
+			}
+		}
+		
+		double HeadsPerc = Percentage(Heads,Occurences);
+		double TailsPerc = Percentage(Tails,Occurences);
+		System.out.println("Percentage of heads in the given occurences is" + HeadsPerc+"%");
+		System.out.println("Percentage of tails in the given occurences is" + TailsPerc+"%");
+
+	}
+
+		private static double getRandomNumberInRange(int min, int max) {
+		Random r = new Random();
+		return r.nextInt((max - min) + 1) + min;
+	}
+		
+		public static double Percentage(int x, int Occ) {
+			double Perc = (100*x)/Occ;
+			return Perc;
+			
+		}
+
+}

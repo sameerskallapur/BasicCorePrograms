@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Array2D {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter number of rows");
+		int r = sc.nextInt();
+		System.out.println("Enter number of columns");
+		int c = sc.nextInt();
+		int[][] arr = new int[r][c]; 
+		Array2D A2D = new Array2D();
+		readArray(r,c);
+	}
+	public static void readArray(int x,int y) {
+		
+	}
+
+}

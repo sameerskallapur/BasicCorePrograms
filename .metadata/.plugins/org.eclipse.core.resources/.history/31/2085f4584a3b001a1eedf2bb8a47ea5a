@@ -1,0 +1,11 @@
+public class StringTemplate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Give the user name");
+		String Template = "Hello <<UserName>>, How are you?";
+
+	}
+
+}
