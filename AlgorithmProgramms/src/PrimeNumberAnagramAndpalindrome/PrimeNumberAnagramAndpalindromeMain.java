@@ -1,8 +1,9 @@
-package PrimeNumbersInGivenRange;
+package PrimeNumberAnagramAndpalindrome;
 import java.util.*;
-import java.io.*;
 
-public class PrimeNumbersInGivenRangeMain {
+
+
+public class PrimeNumberAnagramAndpalindromeMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -12,9 +13,16 @@ public class PrimeNumbersInGivenRangeMain {
 		int m = sc.nextInt();
 		System.out.println("Enter the end of range ");
 		int n = sc.nextInt();
-		PrimeNumbersInGivenRangeBL Prime = new PrimeNumbersInGivenRangeBL();
-		Prime.primenumbers(m,n);
+		PrimeNum Pn = new PrimeNum();
+		PrimePalindrome Pp = new PrimePalindrome();
+		PrimeAnagram Pa = new PrimeAnagram();
+		String PnList = Pn.primenumber(m,n);
+		Pa.Anagram(PnList);
+		Pp.Palindromes(PnList);
 		
+		
+		
+
 	}
 
 }
