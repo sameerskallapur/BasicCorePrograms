@@ -1,0 +1,17 @@
+package com.bl.Basic;
+import java.util.Scanner;
+
+public class StringTemplate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Give the user name");
+		String Template = "Hello <<UserName>>, How are you?";
+		String UserName = sc.nextLine();
+		String NewTemplate = Template.replace("<<UserName>>",UserName);
+		System.out.println(NewTemplate);
+
+	}
+
+}
